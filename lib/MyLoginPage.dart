@@ -16,7 +16,7 @@ class MyLoginPage extends StatelessWidget {
       body: Container(
         height: mSize.height,
         width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 40.0),
+        padding: EdgeInsets.fromLTRB(20, 40, 20, 0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
