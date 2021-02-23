@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gmo_login_demo/LoginPageMini.dart';
 import 'package:gmo_login_demo/MyLoginPage.dart';
 
 void main() {
@@ -16,8 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home:
-          LoginPageMini(), // MyLoginPage() là màn hình bình thường , LoginPageMini() là màn hình 480x800
+      home: MyLoginPage(),
     );
   }
 }

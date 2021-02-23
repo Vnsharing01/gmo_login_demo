@@ -1,199 +1,46 @@
 import 'package:flutter/material.dart';
+import 'package:gmo_login_demo/action_bar.dart';
+import 'package:gmo_login_demo/content.dart';
+import 'package:gmo_login_demo/register_and_facebook_btn.dart';
+import 'package:gmo_login_demo/text_feild_login_and_password.dart';
+import 'package:gmo_login_demo/title.dart';
+import 'package:gmo_login_demo/website_addresss.dart';
 
 // màn hình bình thường
 class MyLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size mSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.blue[800],
       body: Container(
-        height: double.infinity,
+        height: mSize.height,
         width: double.infinity,
         padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 40.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              margin: EdgeInsets.only(bottom: 50),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(
-                    flex: 4,
-                    child: Text(
-                      "Cancel",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 6,
-                    child: Text(
-                      "Registration",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                margin: EdgeInsets.only(bottom: mSize.height / 15),
+                child: ActionBar(),
               ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "SQL".toUpperCase(),
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                Text(
-                  "5",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.orange,
-                  ),
-                ),
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
-              child: Column(
-                children: [
-                  Text(
-                    "Join Tranders Community",
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    "www.mql5.com",
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
+              TitleMQL5(),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: WebsiteAddress(),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Column(
-                    children: [
-                      TextField(
-                        decoration: InputDecoration(
-                            hintText: "Enter Login", border: InputBorder.none),
-                      ),
-                      Divider(
-                        color: Colors.black,
-                      ),
-                      TextField(
-                        decoration: InputDecoration(
-                          hintText: "Email",
-                          border: InputBorder.none,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: TextFeildLoginAndPassword(),
               ),
-            ),
-            Container(
+              Container(
                 padding: EdgeInsets.symmetric(vertical: 10),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "The password for your new MQL5",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                    ),
-                    Text(
-                      "account will be sent to the specified email",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                    ),
-                    Text(
-                      "address",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                    ),
-                  ],
-                )),
-            Column(
-              children: [
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 40),
-                  child: FlatButton(
-                    minWidth: double.infinity,
-                    color: Colors.orange,
-                    padding: EdgeInsets.symmetric(vertical: 14),
-                    child: Text(
-                      "Register",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Text(
-                    "OR",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 40),
-                  child: FlatButton(
-                    color: Colors.blue[50],
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/facebook.png"),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: Text(
-                            "Countie With Facebook",
-                            style: TextStyle(
-                              fontWeight: FontWeight.normal,
-                              fontSize: 17,
-                              color: Colors.blue[900],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-              ],
-            )
-          ],
+                child: Content(),
+              ),
+              RegisterAndFacebookBtn()
+            ],
+          ),
         ),
       ),
     );
