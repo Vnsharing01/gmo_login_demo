@@ -2,15 +2,6 @@
 
 demo 2 màn hình login . 1 màn hình bình thường , 1 màn hình 480x800
 
-## Getting Started
+## màn hình thường
+![Capture1](https://user-images.githubusercontent.com/52748746/108819936-12064880-75ee-11eb-98d0-f873d6a5afd1.PNG)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
