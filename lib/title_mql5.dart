@@ -46,7 +46,7 @@ class TitleMQL5 extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
                 fontFamily: "Roboto",
-                fontSize: mSize.height / 30,
+                fontSize: mSize.height / 28,
               ),
             ),
           )

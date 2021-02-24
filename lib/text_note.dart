@@ -16,6 +16,7 @@ class TextNote extends StatelessWidget {
         style: TextStyle(
           color: Colors.white,
           fontFamily: "Roboto",
+          fontSize: mSize.height / 40,
         ),
       ),
     );

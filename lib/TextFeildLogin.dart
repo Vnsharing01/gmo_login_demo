@@ -47,7 +47,7 @@ class TextFeildLogin extends StatelessWidget {
             ],
           ),
           Divider(
-            height: mSize.width / 80,
+            height: mSize.width / 70,
             color: Colors.grey,
           ),
           Row(
