@@ -1,47 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:gmo_login_demo/TextFeildLogin.dart';
 import 'package:gmo_login_demo/action_bar.dart';
-import 'package:gmo_login_demo/content.dart';
-import 'package:gmo_login_demo/register_and_facebook_btn.dart';
-import 'package:gmo_login_demo/text_feild_login_and_password.dart';
-import 'package:gmo_login_demo/title.dart';
-import 'package:gmo_login_demo/website_addresss.dart';
+import 'package:gmo_login_demo/register_and_facebook.dart';
+import 'package:gmo_login_demo/text_note.dart';
+import 'package:gmo_login_demo/title_mql5.dart';
 
-// màn hình bình thường
 class MyLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size mSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.blue[800],
-      body: Container(
-        height: mSize.height,
-        width: double.infinity,
-        padding: EdgeInsets.fromLTRB(20, 40, 20, 0),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                margin: EdgeInsets.only(bottom: mSize.height / 15),
-                child: ActionBar(),
-              ),
-              TitleMQL5(),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20.0),
-                child: WebsiteAddress(),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                child: TextFeildLoginAndPassword(),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Content(),
-              ),
-              RegisterAndFacebookBtn()
-            ],
+      body: Stack(
+        children: [
+          // background
+          Container(
+            width: double.infinity,
+            height: double.infinity,
+            child: Image.asset(
+              "images/login_background.png",
+              width: double.infinity,
+              height: double.infinity,
+              fit: BoxFit.fitWidth,
+            ),
           ),
-        ),
+          // body
+          Container(
+            height: double.infinity,
+            padding: EdgeInsets.fromLTRB(
+                mSize.width * 0.04, mSize.height * 0.06, mSize.width * 0.04, 0),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  ActionBar(),
+                  Container(
+                    margin: EdgeInsets.only(top: mSize.height / 40),
+                    padding: EdgeInsets.fromLTRB(
+                        mSize.width * 0.1, 0, mSize.width * 0.1, 0),
+                    width: double.infinity,
+                    child: Column(
+                      children: [
+                        TitleMQL5(),
+                        TextFeildLogin(),
+                        TextNote(),
+                        RegisterAndFacebookBtn(),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
