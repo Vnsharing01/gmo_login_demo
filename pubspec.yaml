@@ -69,6 +69,10 @@ flutter:
         - asset: fonts/RobotoCondensed-Regular.ttf
         - asset: fonts/RobotoCondensed-Bold.ttf
           weight: 800
+    - family: trebuchet
+      fonts:
+        - asset: fonts/trebuchet-ms-grassetto.ttf
+          weight: 800
     
   #
   # For details regarding fonts from package dependencies,

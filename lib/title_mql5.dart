@@ -22,18 +22,18 @@ class TitleMQL5 extends StatelessWidget {
                   "MQL",
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: "Roboto",
-                    fontWeight: FontWeight.w700,
-                    fontSize: mSize.height / 25,
+                    fontFamily: "trebuchet",
+                    fontWeight: FontWeight.bold,
+                    fontSize: mSize.height / 20,
                   ),
                 ),
                 Text(
                   "5",
                   style: TextStyle(
                     color: Colors.yellow[700],
-                    fontFamily: "Roboto",
-                    fontWeight: FontWeight.w700,
-                    fontSize: mSize.height / 25,
+                    fontFamily: "trebuchet",
+                    fontWeight: FontWeight.bold,
+                    fontSize: mSize.height / 20,
                   ),
                 )
               ],
