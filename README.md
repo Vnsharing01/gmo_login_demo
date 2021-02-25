@@ -10,7 +10,7 @@ demo 2 màn hình login . 1 màn hình bình thường , 1 màn hình 480x800
 
 ## màn hình thường
 
-![image](https://user-images.githubusercontent.com/52748746/108969656-59570c80-76b4-11eb-9959-0ba03fd14093.png)
+![image](https://user-images.githubusercontent.com/52748746/109100974-76451b80-7758-11eb-8433-14bc6fa6dcd5.png)
 
 
 ## màn hình 480x800
