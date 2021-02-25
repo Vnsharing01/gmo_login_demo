@@ -233,7 +233,8 @@ class MyLoginPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Container(
-                                      padding: EdgeInsets.all(8),
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 9, horizontal: 5),
                                       child: Image.asset(
                                         "images/facebook.png",
                                         scale: 1.5,
