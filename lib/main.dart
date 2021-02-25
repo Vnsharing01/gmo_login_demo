@@ -241,7 +241,7 @@ class MyLoginPage extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      "Countie with Facebook",
+                                      "Continue with Facebook",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w500,
                                           fontStyle: FontStyle.normal,
