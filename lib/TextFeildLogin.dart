@@ -10,7 +10,8 @@ class TextFeildLogin extends StatelessWidget {
     Size mSize = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.only(left: mSize.width / 30, right: mSize.width / 50),
-      margin: EdgeInsets.only(bottom: mSize.height / 80),
+      margin:
+          EdgeInsets.only(bottom: mSize.height / 80, top: mSize.height / 60),
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -39,7 +40,7 @@ class TextFeildLogin extends StatelessWidget {
                     border: InputBorder.none,
                     hintStyle: TextStyle(
                       fontSize: mSize.height / 36,
-                      fontFamily: "Roboto",
+                      fontFamily: "aria",
                     ),
                   ),
                 ),
@@ -48,7 +49,7 @@ class TextFeildLogin extends StatelessWidget {
           ),
           Divider(
             height: mSize.width / 70,
-            color: Colors.grey,
+            color: Colors.black54,
           ),
           Row(
             children: [
@@ -57,7 +58,7 @@ class TextFeildLogin extends StatelessWidget {
                 child: Text(
                   "Email",
                   style: TextStyle(
-                    fontFamily: "Roboto",
+                    fontFamily: "aria",
                     fontWeight: FontWeight.w700,
                     fontSize: mSize.height / 36,
                   ),
@@ -66,11 +67,12 @@ class TextFeildLogin extends StatelessWidget {
               Expanded(
                 child: TextField(
                   decoration: InputDecoration(
-                      hintText: "email",
-                      hintTextDirection: TextDirection.rtl,
-                      border: InputBorder.none,
-                      hintStyle: TextStyle(
-                          fontSize: mSize.height / 36, fontFamily: "Roboto")),
+                    hintText: "email",
+                    hintTextDirection: TextDirection.rtl,
+                    border: InputBorder.none,
+                    hintStyle: TextStyle(
+                        fontSize: mSize.height / 36, fontFamily: "aria"),
+                  ),
                 ),
               ),
             ],

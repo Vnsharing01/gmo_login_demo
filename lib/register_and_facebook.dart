@@ -19,10 +19,10 @@ class RegisterAndFacebookBtn extends StatelessWidget {
             "Register",
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontWeight: FontWeight.w700,
-              color: Colors.black,
-              fontFamily: "Roboto",
-            ),
+                fontWeight: FontWeight.w700,
+                color: Colors.black,
+                fontFamily: "aria",
+                fontSize: mSize.height / 40),
           ),
         ),
         Padding(
@@ -31,14 +31,14 @@ class RegisterAndFacebookBtn extends StatelessWidget {
             "or",
             style: TextStyle(
                 color: Colors.white,
-                fontFamily: "Roboto",
+                fontFamily: "aria",
                 fontSize: mSize.height / 40),
           ),
         ),
         FlatButton(
             minWidth: double.infinity,
             height: mSize.height / 14,
-            color: Colors.lightBlue[50],
+            color: Color(0xFFDEE6F3),
             onPressed: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -52,12 +52,13 @@ class RegisterAndFacebookBtn extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Countie With Facebook",
+                  "Countie with Facebook",
                   style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    color: Color(0xFF191970),
-                    fontFamily: "Roboto",
-                  ),
+                      fontWeight: FontWeight.w500,
+                      fontStyle: FontStyle.normal,
+                      color: Color(0xFF2A4C92),
+                      fontFamily: "aria",
+                      fontSize: mSize.height / 40),
                 ),
               ],
             )),

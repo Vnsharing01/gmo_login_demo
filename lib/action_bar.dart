@@ -21,7 +21,7 @@ class ActionBar extends StatelessWidget {
               textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.white,
-                fontFamily: "Roboto",
+                fontFamily: "aria",
                 fontSize: mSize.height / 35,
               ),
             ),
@@ -33,7 +33,7 @@ class ActionBar extends StatelessWidget {
               "Registration",
               style: TextStyle(
                 color: Colors.white,
-                fontFamily: "Roboto",
+                fontFamily: "aria",
                 fontWeight: FontWeight.bold,
                 fontSize: mSize.height / 35,
               ),

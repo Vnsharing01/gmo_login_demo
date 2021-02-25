@@ -73,7 +73,11 @@ flutter:
       fonts:
         - asset: fonts/trebuchet-ms-grassetto.ttf
           weight: 800
-    
+    - family: aria
+      fonts:
+        - asset: fonts/aria.ttf
+        - asset: fonts/aria-Bold.ttf
+          weight: 800    
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
