@@ -126,6 +126,7 @@ class MyLoginPage extends StatelessWidget {
                               Row(
                                 children: [
                                   Container(
+                                    padding: EdgeInsets.only(right: 10),
                                     child: Text(
                                       "Login",
                                       style: TextStyle(
@@ -157,6 +158,7 @@ class MyLoginPage extends StatelessWidget {
                               Row(
                                 children: [
                                   Container(
+                                    padding: EdgeInsets.only(right: 10),
                                     child: Text(
                                       "Email",
                                       style: TextStyle(
