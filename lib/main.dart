@@ -142,6 +142,7 @@ class MyLoginPage extends StatelessWidget {
                                         hintTextDirection: TextDirection.rtl,
                                         border: InputBorder.none,
                                         hintStyle: TextStyle(
+                                          color: Colors.grey,
                                           fontSize: 15,
                                           fontFamily: "aria",
                                         ),
@@ -172,7 +173,10 @@ class MyLoginPage extends StatelessWidget {
                                         hintTextDirection: TextDirection.rtl,
                                         border: InputBorder.none,
                                         hintStyle: TextStyle(
-                                            fontSize: 15, fontFamily: "aria"),
+                                          color: Colors.grey,
+                                          fontSize: 15,
+                                          fontFamily: "aria",
+                                        ),
                                       ),
                                     ),
                                   ),
