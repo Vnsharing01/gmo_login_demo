@@ -28,7 +28,7 @@ class TextFeildLogin extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "Roboto",
                     fontWeight: FontWeight.w700,
-                    fontSize: mSize.height / 36,
+                    fontSize: mSize.height / 40,
                   ),
                 ),
               ),
@@ -39,7 +39,7 @@ class TextFeildLogin extends StatelessWidget {
                     hintTextDirection: TextDirection.rtl,
                     border: InputBorder.none,
                     hintStyle: TextStyle(
-                      fontSize: mSize.height / 36,
+                      fontSize: mSize.height / 40,
                       fontFamily: "aria",
                     ),
                   ),
@@ -60,7 +60,7 @@ class TextFeildLogin extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "aria",
                     fontWeight: FontWeight.w700,
-                    fontSize: mSize.height / 36,
+                    fontSize: mSize.height / 40,
                   ),
                 ),
               ),
@@ -71,7 +71,7 @@ class TextFeildLogin extends StatelessWidget {
                     hintTextDirection: TextDirection.rtl,
                     border: InputBorder.none,
                     hintStyle: TextStyle(
-                        fontSize: mSize.height / 36, fontFamily: "aria"),
+                        fontSize: mSize.height / 40, fontFamily: "aria"),
                   ),
                 ),
               ),
