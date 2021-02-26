@@ -154,6 +154,7 @@ class MyLoginPage extends StatelessWidget {
                               ),
                               Divider(
                                 color: Colors.black54,
+                                height: 1,
                               ),
                               Row(
                                 children: [
@@ -191,14 +192,23 @@ class MyLoginPage extends StatelessWidget {
                           // text note
                           margin: EdgeInsets.symmetric(vertical: 5),
                           padding: EdgeInsets.only(bottom: 5),
-                          child: Text(
-                            "The password for your new MQL5 account will be sent to the specified email address",
+                          child: RichText(
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: "aria",
-                              fontSize: 15,
-                            ),
+                            text: TextSpan(
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: "aria",
+                                  fontSize: 13,
+                                ),
+                                children: [
+                                  TextSpan(
+                                      text:
+                                          "The password for your new MQL5 \n"),
+                                  TextSpan(
+                                      text:
+                                          "account will be sent to the specified email \n"),
+                                  TextSpan(text: "address")
+                                ]),
                           ),
                         ),
                         Column(
