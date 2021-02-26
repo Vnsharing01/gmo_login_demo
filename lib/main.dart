@@ -91,16 +91,32 @@ class MyLoginPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
-                                padding: EdgeInsets.only(top: 5),
-                                child: Image.asset(
-                                  "images/logo_mql5.png",
-                                  scale: 12,
+                                padding: EdgeInsets.only(top: 5, bottom: 10),
+                                child: RichText(
+                                  text: TextSpan(children: [
+                                    TextSpan(
+                                      text: "MQL",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 25,
+                                          fontFamily: "Roboto"),
+                                    ),
+                                    TextSpan(
+                                      text: "5",
+                                      style: TextStyle(
+                                          color: Color(0xFFFDD435),
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 25,
+                                          fontFamily: "Roboto"),
+                                    ),
+                                  ]),
                                 ),
                               ),
                               Container(
                                 padding: EdgeInsets.only(bottom: 10),
                                 child: Text(
-                                  "Join Tranders Community www.mql5.com",
+                                  "Join Tranders Community \nwww.mql5.com",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.white,
@@ -192,23 +208,14 @@ class MyLoginPage extends StatelessWidget {
                           // text note
                           margin: EdgeInsets.symmetric(vertical: 5),
                           padding: EdgeInsets.only(bottom: 5),
-                          child: RichText(
+                          child: Text(
+                            "The password for your new MQL5 \naccount will be sent to the specified email\naddress",
                             textAlign: TextAlign.center,
-                            text: TextSpan(
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: "aria",
-                                  fontSize: 13,
-                                ),
-                                children: [
-                                  TextSpan(
-                                      text:
-                                          "The password for your new MQL5 \n"),
-                                  TextSpan(
-                                      text:
-                                          "account will be sent to the specified email \n"),
-                                  TextSpan(text: "address")
-                                ]),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: "aria",
+                              fontSize: 13,
+                            ),
                           ),
                         ),
                         Column(
